@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: backend1
+server:
+  port: 19101
