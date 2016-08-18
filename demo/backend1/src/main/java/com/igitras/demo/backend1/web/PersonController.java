@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.PostConstruct;
@@ -27,5 +28,10 @@ public class PersonController {
                     value = "{name}")
     public Person find(@PathVariable("name") String name) {
         return personMap.get(name);
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public Collection<Person> search() {
+        return personMap.values();
     }
 }

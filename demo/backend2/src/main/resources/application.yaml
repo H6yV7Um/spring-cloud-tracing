@@ -1,8 +1,14 @@
 spring:
   application:
     name: backend2
-  zipkin:
-    enabled: true
-    base-url: http://localhost:19100
+#  zipkin:
+#    enabled: true
+#    base-url: http://localhost:19100
+#  redis:
+##    host: hz01-noah-yanzhijie2.hz01.baidu.com
+#    port: 6379
+#    database: 10
+  rabbitmq:
+    addresses: gitlab.igitras.com
 server:
   port: 19102

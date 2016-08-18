@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -34,6 +35,21 @@ public class PersonController {
         person = backend2PersonService.find(name);
         if (person != null) {
             persons.add(person);
+        }
+        return persons;
+    }
+
+
+    @RequestMapping(method = RequestMethod.GET)
+    public Collection<Person> search() {
+        List<Person> persons = new ArrayList<>();
+        Collection<Person> person = backend1PersonService.search();
+        if (person != null) {
+            persons.addAll(person);
+        }
+        person = backend2PersonService.search();
+        if (person != null) {
+            persons.addAll(person);
         }
         return persons;
     }
