@@ -1,2 +1,2 @@
 build:
-  script: "mvn install"
+  script: "mvn clean"
