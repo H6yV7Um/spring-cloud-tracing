@@ -1,4 +1,2 @@
-image: 192.168.0.7:5000/igitras/maven3-java8
-
 build:
-  script: "which mvn && echo ${PATH} && mvn install -B"
+  script: "mvn install"
