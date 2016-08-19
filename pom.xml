@@ -134,14 +134,14 @@
         <repository>
             <id>igitras-nexus</id>
             <name>igitras-nexus</name>
-            <url>http://gitlab.igitras.com:8081/repository/maven-central/</url>
+            <url>https://gitlab.igitras.com/repository/maven-central/</url>
         </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
             <id>igitras-nexus</id>
             <name>igitras-nexus</name>
-            <url>http://gitlab.igitras.com:8081/repository/maven-central/</url>
+            <url>https://gitlab.igitras.com/repository/maven-central/</url>
         </pluginRepository>
     </pluginRepositories>
 
