@@ -1,2 +1,2 @@
 build:
-  script: "mvn clean"
+  script: "mvn clean compile"
